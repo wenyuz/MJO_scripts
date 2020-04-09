@@ -1,0 +1,10 @@
+remap_w500.ncl : remap w500 in netcdf to the grid resolution and grd format of LBM
+remap_grd.ncl  : remap mean state (t,q,ps,zg,u,v) in netcdf to the grid resolution and grd format of LBM
+
+get_forc_hist.gs : following remap_w500.ncl, prepare forcing file from remapped w500 used by LBM
+get_bs_hist.gs   : following remap_grd.ncl, prepare basic state file used by LBM
+
+Please see more details about preparing forcing and basic state file at 
+https://ccsr.aori.u-tokyo.ac.jp/~lbm/lbm/doc2.2.pdf
+
+
